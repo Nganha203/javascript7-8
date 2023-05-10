@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- BS4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- MANG -->
+    <div class="container">
+        <h4>Mảng</h4>
+        <div class="form-group">
+            <input type="number" class="form-control mb-2 w-25" id="iso" placeholder="Nhap vao 1 số">
+            <button class="btn btn-primary" id="btnMang">Thêm mảng</button>
+        </div>
+        <div class="alert alert-primary">
+            <p id="ketqua"></p>
+        </div>
+
+    </div>
+
+    <!-- TONG SO DUONG -->
+    <div class="container">
+        <h4>Tổng số dương</h4>
+        <div class="form-group">
+            <button class="btn btn-primary" id="btnTong_duong">Tổng số dương</button>
+        </div>
+        <div class="alert alert-primary">
+            <p id="Tong_so_duong"></p>
+        </div>
+    </div>
+
+    <!-- DEM SO DUONG -->
+    <div class="container">
+        <h4>Đếm số dương</h4>
+        <div class="form-group">
+            <button class="btn btn-primary" id="btnDem_duong">Đếm số dương</button>
+        </div>
+        <div class="alert alert-primary">
+            <p id="Dem_so_duong"></p>
+        </div>
+    </div>
+
+    <!-- TIM SO NHO NHAT -->
+    <div class="container">
+        <h4>Tìm số nhỏ nhất</h4>
+        <div class="form-group">
+            <button class="btn btn-primary" id="btnSo_nho_nhat">Tìm số nhỏ nhất</button>
+        </div>
+        <div class="alert alert-primary">
+            <p id="So_nho_nhat"></p>
+        </div>
+    </div>
+
+    <!-- TIM SO DUONG NHO NHAT -->
+    <div class="container">
+        <h4>Tìm số dương nhỏ nhất</h4>
+        <div class="form-group">
+            <button class="btn btn-primary" id="btnDuong_nho_nhat">Tìm số dương nhỏ nhất</button>
+        </div>
+        <div class="alert alert-primary">
+            <p id="Duong_nho_nhat"></p>
+        </div>
+    </div>
+
+    <!-- TIM SO CHAN CUOI CUNG -->
+    <div class="container">
+        <h4>Tìm số chẵn cuối cùng</h4>
+        <div class="form-group">
+            <button class="btn btn-primary" id="btnChan_end">Tìm số chẵn cuối cùng</button>
+        </div>
+        <div class="alert alert-primary">
+            <p id="Chan_end"></p>
+        </div>
+    </div>
+
+    <!-- DOI CHO -->
+    <div class="container">
+        <h4>Đổi chỗ</h4>
+        <div class="form-group">
+            <div class="row">
+                <input type="number" class="form-control col-4 ml-3 mr-3" id="vitri1" placeholder="Nhap vao vi tri 1">
+                <input type="number" class="form-control col-4" id="vitri2" placeholder="Nhap vao vi tri 2">
+            </div>
+            <button class="btn btn-primary mt-2" id="btnDoi_cho">Đổi chỗ</button>
+        </div>
+        <div class="alert alert-primary">
+            <p id="Doi_cho"></p>
+        </div>
+    </div>
+
+    <!-- SAP XEP TANG DAN -->
+    <div class="container">
+        <h4>Sắp xếp tăng dần</h4>
+        <div class="form-group">
+            <button class="btn btn-primary" id="btnTang_dan">Sắp xếp tăng dần</button>
+        </div>
+        <div class="alert alert-primary">
+            <p id="Tang_dan"></p>
+        </div>
+    </div>
+
+    <!-- TIM SO NGUYEN TO DAU TIEN -->
+    <div class="container">
+        <h4>Số nguyên tố đầu tiên</h4>
+        <div class="form-group">
+            <button class="btn btn-primary" id="btnNguyen_dau">Số nguyên tố đầu tiên</button>
+        </div>
+        <div class="alert alert-primary">
+            <p id="Nguyen_dau"></p>
+        </div>
+    </div>
+
+    <!-- DEM SO NGUYEN -->
+    <div class="container">
+        <h4>Đếm số nguyên</h4>
+        <div class="form-group">
+            <div class="row mb-2">
+                <input type="number" class="form-control mx-3 col-3" id="songuyen" placeholder="Nhap vao 1 số">
+                <button class="btn btn-primary col-1" id="btnThem_so">Thêm số</button>
+            </div>
+            <div class="alert alert-success">
+                <p id="Mang_so_nguyen"></p>
+            </div>
+
+            <button class="btn btn-primary" id="btnSo_nguyen">Đếm số nguyên</button>
+        </div>
+        <div class="alert alert-primary">
+            <p id="So_nguyen"></p>
+        </div>
+    </div>
+
+    <!-- SO SANH SO LUONG AM VA DUONG -->
+    <div class="container">
+        <h4>So sánh số lượng dương và âm</h4>
+        <div class="form-group">
+            <button class="btn btn-primary" id="btnDuong_am">Dương và âm</button>
+        </div>
+        <div class="alert alert-primary">
+            <p id="Duong_am"></p>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- BS4 -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
